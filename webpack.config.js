@@ -1,7 +1,6 @@
 const HTMLWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    // target: "node",
     module: {
         rules: [
             /* rules for babel-loader (transform js dependencies with babel - e.g.,
