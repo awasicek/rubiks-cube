@@ -11,6 +11,11 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
+                        plugins: [
+                            // decorators must go before class properties
+                            ["@babel/plugin-proposal-decorators", { "legacy": true}],
+                            ["@babel/plugin-proposal-class-properties", { "loose": true}]
+                        ],
                         presets: ["@babel/preset-env", "@babel/preset-react"]
                     }
                 }
