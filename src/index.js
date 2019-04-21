@@ -3,15 +3,19 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import {configure, observable, action} from 'mobx';
 import {observer} from "mobx-react";
+import Face from "@components/face";
 
 // don't allow state modifications outside actions
 configure({enforceActions: "always"});
 
-
 const StyledAppContainer = styled.div`
-    background-color: green;
+    background-color: lightgoldenrodyellow;
     color: white;
+    text-shadow: 0px 0px 4px #333;
     font-size: 2rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px;
 `;
 
 const App = () => {
@@ -37,14 +41,18 @@ class Cube extends React.Component {
 
     render() {
         return(
-            <div>
-                <div>{this.title}</div>
-                <button
-                    onClick={this.handleClick}
-                >
-                    Toggle Title
-                </button>
-            </div>
+            <React.Fragment>
+                <div>
+                    <div>{this.title}</div>
+                    <button
+                        onClick={this.handleClick}
+                    >
+                        Toggle Title
+                    </button>
+                </div>
+                <br />
+                <Face />
+            </React.Fragment>
         );
     }
 }

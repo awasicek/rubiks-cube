@@ -1,4 +1,5 @@
 const HTMLWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
 
 module.exports = {
     module: {
@@ -6,7 +7,7 @@ module.exports = {
             /* rules for babel-loader (transform js dependencies with babel - e.g.,
                import components into other components) */
             {
-                test: /\.js$/,
+                test: /\.jsx?$/, // js and jsx
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
@@ -29,5 +30,11 @@ module.exports = {
         template: "./src/index.html",
         filename: "./index.html"
         })
-    ]
+    ],
+    resolve: {
+        extensions: [".js", ".jsx"],
+        alias: {
+            "@components": path.resolve(__dirname, "src/components/")
+        }
+    }
 };
