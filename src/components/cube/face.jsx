@@ -1,4 +1,4 @@
-import Tile from "@components/tile";
+import Tile from "@components/cube/tile";
 import React from "react";
 import styled from "styled-components";
 /**
