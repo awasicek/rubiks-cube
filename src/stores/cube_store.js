@@ -17,7 +17,7 @@ export default class CubeStore {
         // front -> right -> back -> left -> front
         // down/bottom stays the same
         // top rotates counter-clockwise
-        let affectedRowTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 2 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
+        let affectedRowTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 1 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
 
         affectedRowTiles.forEach(tile => {
             switch(tile.face) {
@@ -40,15 +40,15 @@ export default class CubeStore {
 
         // rotate the top
         let upFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.U_FACE);
-        this.rotateFaceCounterClockwise90(upFaceTiles);
+        this.rotateFace(upFaceTiles, 90);
     };
 
     @action.bound
     rotateMiddleRight90 = () => {
         // up/top and down/bottom stay same
         // front -> right -> back -> left -> front
-        // middle tiles have y-coordinate = 1
-        let affectedTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 1 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
+        // middle tiles have y-coordinate = 0
+        let affectedTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 0 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
         window.affectedMiddleRightTiles = affectedTiles;
         affectedTiles.forEach(tile => {
             switch(tile.face) {
@@ -75,7 +75,7 @@ export default class CubeStore {
         // front -> right -> back -> left -> front
         // up/top stays the same
         // down/bottom rotates clockwise
-        let affectedRowTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 0 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
+        let affectedRowTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === -1 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
 
         affectedRowTiles.forEach(tile => {
             switch(tile.face) {
@@ -98,15 +98,15 @@ export default class CubeStore {
 
         // rotate the top
         let downFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.D_FACE);
-        this.rotateFaceClockwise90(downFaceTiles);
+        this.rotateFace(downFaceTiles, -90);
     };
 
     @action.bound
     rotateMiddleUp90 = () => {
         // right and left stay same
         // front -> up/top -> back -> down/bottom -> front
-        // middle tiles have x-coordinate = 1
-        let affectedTiles = this.ALL_TILES.filter(tile => tile["x-coordinate"] === 1 && tile.face !== FACES.R_FACE && tile.face !== FACES.L_FACE);
+        // middle tiles have x-coordinate = 0
+        let affectedTiles = this.ALL_TILES.filter(tile => tile["x-coordinate"] === 0 && tile.face !== FACES.R_FACE && tile.face !== FACES.L_FACE);
         window.affectedMiddleUpTiles = affectedTiles;
         affectedTiles.forEach(tile => {
             switch(tile.face) {
@@ -136,10 +136,10 @@ export default class CubeStore {
 
         // rotate the columns
         let affectedColTiles = this.ALL_TILES.filter(tile => {
-            const isFrontCol = tile["x-coordinate"] === 2 && tile.face === FACES.F_FACE;
-            const isUpCol = tile["x-coordinate"] === 2 && tile.face === FACES.U_FACE;
-            const isBackCol = tile["x-coordinate"] === 0 && tile.face === FACES.B_FACE; // note the x-coord
-            const isDownCol = tile["x-coordinate"] === 2 && tile.face === FACES.D_FACE;
+            const isFrontCol = tile["x-coordinate"] === 1 && tile.face === FACES.F_FACE;
+            const isUpCol = tile["x-coordinate"] === 1 && tile.face === FACES.U_FACE;
+            const isBackCol = tile["x-coordinate"] === -1 && tile.face === FACES.B_FACE; // note the x-coord
+            const isDownCol = tile["x-coordinate"] === 1 && tile.face === FACES.D_FACE;
             return isFrontCol || isUpCol || isBackCol || isDownCol;
         });
         affectedColTiles.forEach(tile => {
@@ -149,11 +149,11 @@ export default class CubeStore {
                     break;
                 case FACES.U_FACE:
                     tile.face = FACES.B_FACE;
-                    tile["x-coordinate"] = 0;
+                    tile["x-coordinate"] = -1;
                     break;
                 case FACES.B_FACE:
                     tile.face = FACES.D_FACE;
-                    tile["x-coordinate"] = 2;
+                    tile["x-coordinate"] = 1;
                     break;
                 case FACES.D_FACE:
                     tile.face = FACES.F_FACE;
@@ -165,7 +165,7 @@ export default class CubeStore {
 
         // rotate the side
         let rightFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.R_FACE);
-        this.rotateFaceClockwise90(rightFaceTiles);
+        this.rotateFace(rightFaceTiles, -90);
     };
 
     @action.bound
@@ -176,10 +176,10 @@ export default class CubeStore {
 
         // rotate the columns
         let affectedColTiles = this.ALL_TILES.filter(tile => {
-            const isFrontCol = tile["x-coordinate"] === 0 && tile.face === FACES.F_FACE;
-            const isUpCol = tile["x-coordinate"] === 0 && tile.face === FACES.U_FACE;
-            const isBackCol = tile["x-coordinate"] === 2 && tile.face === FACES.B_FACE; // note the x-coord
-            const isDownCol = tile["x-coordinate"] === 0 && tile.face === FACES.D_FACE;
+            const isFrontCol = tile["x-coordinate"] === -1 && tile.face === FACES.F_FACE;
+            const isUpCol = tile["x-coordinate"] === -1 && tile.face === FACES.U_FACE;
+            const isBackCol = tile["x-coordinate"] === 1 && tile.face === FACES.B_FACE; // note the x-coord
+            const isDownCol = tile["x-coordinate"] === -1 && tile.face === FACES.D_FACE;
             return isFrontCol || isUpCol || isBackCol || isDownCol;
         });
         affectedColTiles.forEach(tile => {
@@ -189,11 +189,11 @@ export default class CubeStore {
                     break;
                 case FACES.U_FACE:
                     tile.face = FACES.B_FACE;
-                    tile["x-coordinate"] = 2;
+                    tile["x-coordinate"] = 1;
                     break;
                 case FACES.B_FACE:
                     tile.face = FACES.D_FACE;
-                    tile["x-coordinate"] = 0;
+                    tile["x-coordinate"] = -1;
                     break;
                 case FACES.D_FACE:
                     tile.face = FACES.F_FACE;
@@ -205,7 +205,7 @@ export default class CubeStore {
 
         // rotate the side
         let leftFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.L_FACE);
-        this.rotateFaceCounterClockwise90(leftFaceTiles);
+        this.rotateFace(leftFaceTiles, 90);
     };
 
     @action.bound
@@ -217,92 +217,28 @@ export default class CubeStore {
     // Helper Functions
     //=====================
     @action
-    rotateFaceClockwise90 = function rotateFaceClockwise90(faceTiles) {
-        faceTiles.forEach(tile => {
-            switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
-                case ("0, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("0, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("0, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("1, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("1, 1"):
-                    // stay the same
-                    break;
-                case ("1, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("2, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("2, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("2, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 0;
-                    break;
-                default:
-                    throw new Error("oops mistake made");
-            }
-        });
-    };
+    rotateFace = function rotateFace(faceTiles, degrees) {
+        /* For a point located at (x, y), if you want to rotate that point around the origin, the coordinate
+         * of the new point (x', y') follows the following formula:
+         * x' = x cos(theta) - y sin(theta)
+         * y' = y cos(theta) + x sin(theta)
+         * where theta is the angle of rotation. */
 
-    @action
-    rotateFaceCounterClockwise90 = function rotateFaceCounterClockwise90(faceTiles) {
+        window.tilesPreRotation = faceTiles;
+
         faceTiles.forEach(tile => {
-            switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
-                case ("0, 0"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("0, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("0, 2"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("1, 0"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("1, 1"):
-                    // stay the same
-                    break;
-                case ("1, 2"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("2, 0"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("2, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("2, 2"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 2;
-                    break;
-                default:
-                    throw new Error("oops mistake made");
-            }
+            const xCoord = tile["x-coordinate"];
+            const yCoord = tile["y-coordinate"];
+            let newX = (xCoord * Math.cos(degrees * Math.PI / 180) - yCoord * Math.sin(degrees * Math.PI / 180)).toFixed();
+            let newY = (yCoord * Math.cos(degrees * Math.PI / 180) + xCoord * Math.sin(degrees * Math.PI / 180)).toFixed();
+            // get rid of -0
+            if (newX == 0) newX = 0;
+            if (newY == 0) newY = 0;
+            // cast back to numeric
+            tile["x-coordinate"] = +newX;
+            tile["y-coordinate"] = +newY;
         });
-    }
+
+        window.tilesPostRotation = faceTiles;
+    };
 }
