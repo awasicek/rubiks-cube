@@ -147,6 +147,86 @@ export default class CubeStore {
     };
 
     @action.bound
+    rotateLeftUp90 = () => {
+        // right stays the same
+        // columns change faces for front -> up -> back -> down -> front
+        // 90 degree counter-clockwise rotation occurs for left
+
+        // rotate the columns
+        let affectedColTiles = this.ALL_TILES.filter(tile => {
+            const isFrontCol = tile["x-coordinate"] === 0 && tile.face === FACES.F_FACE;
+            const isUpCol = tile["x-coordinate"] === 0 && tile.face === FACES.U_FACE;
+            const isBackCol = tile["x-coordinate"] === 2 && tile.face === FACES.B_FACE; // note the x-coord
+            const isDownCol = tile["x-coordinate"] === 0 && tile.face === FACES.D_FACE;
+            return isFrontCol || isUpCol || isBackCol || isDownCol;
+        });
+        affectedColTiles.forEach(tile => {
+            switch(tile.face) {
+                case FACES.F_FACE:
+                    tile.face = FACES.U_FACE;
+                    break;
+                case FACES.U_FACE:
+                    tile.face = FACES.B_FACE;
+                    tile["x-coordinate"] = 2;
+                    break;
+                case FACES.B_FACE:
+                    tile.face = FACES.D_FACE;
+                    tile["x-coordinate"] = 0;
+                    break;
+                case FACES.D_FACE:
+                    tile.face = FACES.F_FACE;
+                    break;
+                default:
+                    throw new Error("oops mistake made");
+            }
+        });
+
+        // rotate the side
+        let leftFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.L_FACE);
+        leftFaceTiles.forEach(tile => {
+            switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
+                case ("0, 0"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 0;
+                    break;
+                case ("0, 1"):
+                    tile["x-coordinate"] = 1;
+                    tile["y-coordinate"] = 0;
+                    break;
+                case ("0, 2"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 0;
+                    break;
+                case ("1, 0"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 1;
+                    break;
+                case ("1, 1"):
+                    // stay the same
+                    break;
+                case ("1, 2"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 1;
+                    break;
+                case ("2, 0"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 2;
+                    break;
+                case ("2, 1"):
+                    tile["x-coordinate"] = 1;
+                    tile["y-coordinate"] = 2;
+                    break;
+                case ("2, 2"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 2;
+                    break;
+                default:
+                    throw new Error("oops mistake made");
+            }
+        });
+    };
+
+    @action.bound
     reset = () => {
         this.ALL_TILES = INIT_CONFIG
     };

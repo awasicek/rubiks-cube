@@ -69,6 +69,11 @@ export default class UnfoldedCube extends React.Component {
                     Rotate Middle =>
                 </button>
                 <button
+                    onClick={this.cubeStore.rotateLeftUp90}
+                >
+                    Rotate Left ^
+                </button>
+                <button
                     onClick={this.cubeStore.rotateMiddleUp90}
                 >
                     Rotate Middle ^
