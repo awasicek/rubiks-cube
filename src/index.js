@@ -102,12 +102,12 @@ class Cube extends React.Component {
     };
 
     @action.bound
-    rotateMiddleRight90 = () => {
-        // top and bottom stay same
+    rotateMiddleRight90 = function rotateMiddleRight90() {
+        // up/top and down/bottom stay same
         // front -> right -> back -> left -> front
         // middle tiles have y-coordinate = 1
         let affectedTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 1 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
-        window.affectedTiles = affectedTiles;
+        window.affectedMiddleRightTiles = affectedTiles;
         affectedTiles.forEach(tile => {
             switch(tile.face) {
                 case FACES.F_FACE:
@@ -126,6 +126,38 @@ class Cube extends React.Component {
                     throw new Error("oops mistake made");
             }
         });
+    };
+
+    @action.bound
+    rotateMiddleUp90 = function rotateMiddleUp90() {
+        // right and left stay same
+        // front -> up/top -> back -> down/bottom -> front
+        // middle tiles have x-coordinate = 1
+        let affectedTiles = this.ALL_TILES.filter(tile => tile["x-coordinate"] === 1 && tile.face !== FACES.R_FACE && tile.face !== FACES.L_FACE);
+        window.affectedMiddleUpTiles = affectedTiles;
+        affectedTiles.forEach(tile => {
+            switch(tile.face) {
+                case FACES.F_FACE:
+                    tile.face = FACES.U_FACE;
+                    break;
+                case FACES.U_FACE:
+                    tile.face = FACES.B_FACE;
+                    break;
+                case FACES.B_FACE:
+                    tile.face = FACES.D_FACE;
+                    break;
+                case FACES.D_FACE:
+                    tile.face = FACES.F_FACE;
+                    break;
+                default:
+                    throw new Error("oops mistake made");
+            }
+        });
+    };
+
+    @action.bound
+    reset = function reset() {
+        this.ALL_TILES = INIT_CONFIG
     };
 
     render() {
@@ -153,6 +185,16 @@ class Cube extends React.Component {
                     onClick={this.rotateMiddleRight90}
                 >
                     Rotate Middle =>
+                </button>
+                <button
+                    onClick={this.rotateMiddleUp90}
+                >
+                    Rotate Middle ^
+                </button>
+                <button
+                    onClick={this.reset}
+                >
+                    Reset
                 </button>
             </React.Fragment>
         );
