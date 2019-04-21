@@ -37,32 +37,32 @@ const StyledGrid = styled.div`
 /* For the western color scheme, the letters correspond to the following colors:
     L: orange, F: green, R: red, B: blue, D: yellow, U: white
  */
-const StyledLFace = styled(Face)`
+const StyledLFace = styled(Face)` // L = Left
     grid-column-start: first-col;
     grid-row-start: middle-row;
 `;
 
-const StyledFFace = styled(Face)`
+const StyledFFace = styled(Face)` // F = Front
     grid-column-start: second-col;
     grid-row-start: middle-row;
 `;
 
-const StyledRFace = styled(Face)`
+const StyledRFace = styled(Face)` // R = Right
     grid-column-start: third-col;
     grid-row-start: middle-row;
 `;
 
-const StyledBFace = styled(Face)`
+const StyledBFace = styled(Face)` // B = Back
     grid-column-start: fourth-col;
     grid-row-start: middle-row;
 `;
 
-const StyledDFace = styled(Face)`
+const StyledDFace = styled(Face)` // D = Down
     grid-column-start: second-col;
     grid-row-start: bottom-row;
 `;
 
-const StyledUFace = styled(Face)`
+const StyledUFace = styled(Face)` // U = Up
     grid-column-start: second-col;
     grid-row-start: top-row;
 `;
@@ -72,23 +72,23 @@ class Cube extends React.Component {
     @observable title = "Rubik's Cube";
     @observable ALL_TILES = INIT_CONFIG;
     // @observable ALL_TILES = new Map(INIT_CONFIG);
-    @computed get FACE_A_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_A); } // blue
-    @computed get FACE_B_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_B); } // red
-    @computed get FACE_C_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_C); } // green
-    @computed get FACE_D_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_D); } // orange
-    @computed get FACE_E_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_E); } // yellow
-    @computed get FACE_F_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.FACE_F); } // white
+    @computed get FACE_F_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.F_FACE); } // blue
+    @computed get FACE_B_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.B_FACE); } // red
+    @computed get FACE_U_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.U_FACE); } // green
+    @computed get FACE_D_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.D_FACE); } // orange
+    @computed get FACE_R_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.R_FACE); } // yellow
+    @computed get FACE_L_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.L_FACE); } // white
 
     constructor(props) {
         super(props);
-        // this.FACE_A_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_A); // blue
-        // this.FACE_B_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_B); // red
-        // this.FACE_C_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_C); // green
-        // this.FACE_D_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_D); // orange
-        // this.FACE_E_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_E); // yellow
-        // this.FACE_F_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.FACE_F); // white
+        // this.FACE_F_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.F_FACE); // blue
+        // this.FACE_B_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.B_FACE); // red
+        // this.FACE_U_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.U_FACE); // green
+        // this.FACE_D_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.D_FACE); // orange
+        // this.FACE_R_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.R_FACE); // yellow
+        // this.FACE_L_TILES = INIT_CONFIG.filter(tile => tile.face === FACES.L_FACE); // white
         // window.INIT_CONFIG = INIT_CONFIG;
-        // window.faceA = this.FACE_A_TILES;
+        // window.faceA = this.FACE_F_TILES;
         window.ALL_TILES = this.ALL_TILES;
     }
 
@@ -103,24 +103,24 @@ class Cube extends React.Component {
 
     @action.bound
     rotateMiddleRight90 = () => {
-        // top (C) and bottom (D) stay same
-        // front (A) -> right (E) -> back (B) -> left (F) -> front (A)
+        // top and bottom stay same
+        // front -> right -> back -> left -> front
         // middle tiles have y-coordinate = 1
-        let affectedTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 1 && tile.face !== FACES.FACE_C && tile.face !== FACES.FACE_D);
+        let affectedTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 1 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
         window.affectedTiles = affectedTiles;
         affectedTiles.forEach(tile => {
             switch(tile.face) {
-                case FACES.FACE_A:
-                    tile.face = FACES.FACE_E;
+                case FACES.F_FACE:
+                    tile.face = FACES.R_FACE;
                     break;
-                case FACES.FACE_E:
-                    tile.face = FACES.FACE_B;
+                case FACES.R_FACE:
+                    tile.face = FACES.B_FACE;
                     break;
-                case FACES.FACE_B:
-                    tile.face = FACES.FACE_F;
+                case FACES.B_FACE:
+                    tile.face = FACES.L_FACE;
                     break;
-                case FACES.FACE_F:
-                    tile.face = FACES.FACE_A;
+                case FACES.L_FACE:
+                    tile.face = FACES.F_FACE;
                     break;
                 default:
                     throw new Error("oops mistake made");
@@ -141,12 +141,12 @@ class Cube extends React.Component {
                 </div>
                 <br />
                 <StyledGrid>
-                    <StyledBFace tiles={this.FACE_A_TILES} />
-                    <StyledRFace tiles={this.FACE_B_TILES} />
-                    <StyledFFace tiles={this.FACE_C_TILES} />
-                    <StyledLFace tiles={this.FACE_D_TILES} />
-                    <StyledDFace tiles={this.FACE_E_TILES} />
-                    <StyledUFace tiles={this.FACE_F_TILES} />
+                    <StyledFFace tiles={this.FACE_F_TILES} />
+                    <StyledBFace tiles={this.FACE_B_TILES} />
+                    <StyledUFace tiles={this.FACE_U_TILES} />
+                    <StyledDFace tiles={this.FACE_D_TILES} />
+                    <StyledRFace tiles={this.FACE_R_TILES} />
+                    <StyledLFace tiles={this.FACE_L_TILES} />
                 </StyledGrid>
                 <br />
                 <button

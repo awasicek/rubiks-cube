@@ -3,12 +3,12 @@
  */
 
 const FACES = {
-    FACE_A: 1,
-    FACE_B: 2,
-    FACE_C: 3,
-    FACE_D: 4,
-    FACE_E: 5,
-    FACE_F: 6
+    F_FACE: 1, // front face
+    B_FACE: 2, // back face
+    U_FACE: 3, // up face
+    D_FACE: 4, // down face
+    R_FACE: 5, // right face
+    L_FACE: 6 // left face
 };
 
 export default FACES;
