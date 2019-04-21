@@ -103,47 +103,7 @@ export default class CubeStore {
 
         // rotate the side
         let rightFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.R_FACE);
-        rightFaceTiles.forEach(tile => {
-            switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
-                case ("0, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("0, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("0, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 2;
-                    break;
-                case ("1, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("1, 1"):
-                    // stay the same
-                    break;
-                case ("1, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 1;
-                    break;
-                case ("2, 0"):
-                    tile["x-coordinate"] = 0;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("2, 1"):
-                    tile["x-coordinate"] = 1;
-                    tile["y-coordinate"] = 0;
-                    break;
-                case ("2, 2"):
-                    tile["x-coordinate"] = 2;
-                    tile["y-coordinate"] = 0;
-                    break;
-                default:
-                    throw new Error("oops mistake made");
-            }
-        });
+        this.rotateFaceClockwise90(rightFaceTiles);
     };
 
     @action.bound
@@ -183,7 +143,65 @@ export default class CubeStore {
 
         // rotate the side
         let leftFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.L_FACE);
-        leftFaceTiles.forEach(tile => {
+        this.rotateFaceCounterClockwise90(leftFaceTiles);
+    };
+
+    @action.bound
+    reset = () => {
+        this.ALL_TILES = INIT_CONFIG
+    };
+
+    //=====================
+    // Helper Functions
+    //=====================
+    @action
+    rotateFaceClockwise90 = function rotateFaceClockwise90(faceTiles) {
+        faceTiles.forEach(tile => {
+            switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
+                case ("0, 0"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 2;
+                    break;
+                case ("0, 1"):
+                    tile["x-coordinate"] = 1;
+                    tile["y-coordinate"] = 2;
+                    break;
+                case ("0, 2"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 2;
+                    break;
+                case ("1, 0"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 1;
+                    break;
+                case ("1, 1"):
+                    // stay the same
+                    break;
+                case ("1, 2"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 1;
+                    break;
+                case ("2, 0"):
+                    tile["x-coordinate"] = 0;
+                    tile["y-coordinate"] = 0;
+                    break;
+                case ("2, 1"):
+                    tile["x-coordinate"] = 1;
+                    tile["y-coordinate"] = 0;
+                    break;
+                case ("2, 2"):
+                    tile["x-coordinate"] = 2;
+                    tile["y-coordinate"] = 0;
+                    break;
+                default:
+                    throw new Error("oops mistake made");
+            }
+        });
+    };
+
+    @action
+    rotateFaceCounterClockwise90 = function rotateFaceCounterClockwise90(faceTiles) {
+        faceTiles.forEach(tile => {
             switch(`${tile["x-coordinate"]}, ${tile["y-coordinate"]}`) {
                 case ("0, 0"):
                     tile["x-coordinate"] = 2;
@@ -224,10 +242,5 @@ export default class CubeStore {
                     throw new Error("oops mistake made");
             }
         });
-    };
-
-    @action.bound
-    reset = () => {
-        this.ALL_TILES = INIT_CONFIG
-    };
+    }
 }
