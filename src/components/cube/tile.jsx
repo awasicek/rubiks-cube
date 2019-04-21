@@ -31,7 +31,10 @@ const Tile = observer(props => {
 });
 
 Tile.defaultProps = {
-    tileColor: "grey"
+    tileColor: "grey",
+    initX: "errorX",
+    initY: "errorY",
+    uid: "errorUID"
 };
 
 export default Tile;
