@@ -12,7 +12,6 @@ export default class CubeStore {
     @computed get FACE_R_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.R_FACE); } // red
     @computed get FACE_L_TILES() { return this.ALL_TILES.filter(tile => tile.face === FACES.L_FACE); } // orange
 
-
     @action.bound
     rotateMiddleRight90 = () => {
         // up/top and down/bottom stay same

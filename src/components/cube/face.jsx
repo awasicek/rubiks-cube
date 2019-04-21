@@ -38,21 +38,66 @@ const Face = props => {
           <StyledFaceContainer className={props.className}>
               {/*top row*/}
               <StyledFaceRow>
-                  <Tile initX={0} initY={2} tileColor={topLeftTile.color} /> {/*left*/}
-                  <Tile initX={1} initY={2} tileColor={topMiddleTile.color} /> {/*middle*/}
-                  <Tile initX={2} initY={2} tileColor={topRightTile.color} /> {/*right*/}
+                  <Tile
+                      initX={0}
+                      initY={2}
+                      uid={topLeftTile.uid}
+                      tileColor={topLeftTile.color}
+                  /> {/*left*/}
+                  <Tile
+                      initX={1}
+                      initY={2}
+                      uid={topMiddleTile.uid}
+                      tileColor={topMiddleTile.color}
+                  /> {/*middle*/}
+                  <Tile
+                      initX={2}
+                      initY={2}
+                      uid={topRightTile.uid}
+                      tileColor={topRightTile.color}
+                  /> {/*right*/}
               </StyledFaceRow>
               {/*center row*/}
               <StyledFaceRow>
-                  <Tile initX={0} initY={1} tileColor={centerLeftTile.color} /> {/*left*/}
-                  <Tile initX={1} initY={1} tileColor={centerMiddleTile.color} /> {/*middle*/}
-                  <Tile initX={2} initY={1} tileColor={centerRightTile.color} /> {/*right*/}
+                  <Tile
+                      initX={0}
+                      initY={1}
+                      uid={centerLeftTile.uid}
+                      tileColor={centerLeftTile.color}
+                  /> {/*left*/}
+                  <Tile
+                      initX={1}
+                      initY={1}
+                      uid={centerMiddleTile.uid}
+                      tileColor={centerMiddleTile.color}
+                  /> {/*middle*/}
+                  <Tile
+                      initX={2}
+                      initY={1}
+                      uid={centerRightTile.uid}
+                      tileColor={centerRightTile.color}
+                  /> {/*right*/}
               </StyledFaceRow>
               {/*bottom row*/}
               <StyledFaceRow>
-                  <Tile initX={0} initY={0} tileColor={bottomLeftTile.color} /> {/*left*/}
-                  <Tile initX={1} initY={0} tileColor={bottomMiddleTile.color} /> {/*middle*/}
-                  <Tile initX={2} initY={0} tileColor={bottomRightTile.color} /> {/*right*/}
+                  <Tile
+                      initX={0}
+                      initY={0}
+                      uid={bottomLeftTile.uid}
+                      tileColor={bottomLeftTile.color}
+                  /> {/*left*/}
+                  <Tile
+                      initX={1}
+                      initY={0}
+                      uid={bottomMiddleTile.uid}
+                      tileColor={bottomMiddleTile.color}
+                  /> {/*middle*/}
+                  <Tile
+                      initX={2}
+                      initY={0}
+                      uid={bottomRightTile.uid}
+                      tileColor={bottomRightTile.color}
+                  /> {/*right*/}
               </StyledFaceRow>
           </StyledFaceContainer>
     );
