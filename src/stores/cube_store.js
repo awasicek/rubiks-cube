@@ -71,6 +71,37 @@ export default class CubeStore {
     };
 
     @action.bound
+    rotateBottomRight90 = () => {
+        // front -> right -> back -> left -> front
+        // up/top stays the same
+        // down/bottom rotates clockwise
+        let affectedRowTiles = this.ALL_TILES.filter(tile => tile["y-coordinate"] === 0 && tile.face !== FACES.U_FACE && tile.face !== FACES.D_FACE);
+
+        affectedRowTiles.forEach(tile => {
+            switch(tile.face) {
+                case FACES.F_FACE:
+                    tile.face = FACES.R_FACE;
+                    break;
+                case FACES.R_FACE:
+                    tile.face = FACES.B_FACE;
+                    break;
+                case FACES.B_FACE:
+                    tile.face = FACES.L_FACE;
+                    break;
+                case FACES.L_FACE:
+                    tile.face = FACES.F_FACE;
+                    break;
+                default:
+                    throw new Error("oops mistake made");
+            }
+        });
+
+        // rotate the top
+        let downFaceTiles = this.ALL_TILES.filter(tile => tile.face === FACES.D_FACE);
+        this.rotateFaceClockwise90(downFaceTiles);
+    };
+
+    @action.bound
     rotateMiddleUp90 = () => {
         // right and left stay same
         // front -> up/top -> back -> down/bottom -> front
