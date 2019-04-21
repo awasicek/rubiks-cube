@@ -5,7 +5,9 @@ import React from "react";
  * cube has a total of 54 tiles. Tiles can be one of six colors: green, red, white, yellow, blue, or orange.
  */
 
-const StyledTile = styled.div`
+const StyledTile = styled.div.attrs(props => ({
+    "data-static-coords": `${props.initX}, ${props.initY}`
+}))`
     border: 1px solid black;
     height: 100px;
     width: 100px;
@@ -14,12 +16,12 @@ const StyledTile = styled.div`
 
 const Tile = props => {
     return(
-        <StyledTile tileColor={props.tileColor} />
+        <StyledTile {...props} />
     );
 };
 
 Tile.defaultProps = {
-    tileColor: "red"
+    tileColor: "grey"
 };
 
 export default Tile;
