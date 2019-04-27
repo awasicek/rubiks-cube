@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Face from "@components/cube/face";
+import RotateButton from "@components/controls/rotate_button";
+import Button from "@components/controls/button";
 import { observer } from "mobx-react";
 import CubeStore from "@stores/cube_store";
 
@@ -93,11 +95,11 @@ export default class UnfoldedCube extends React.Component {
                 >
                     Rotate Right ^
                 </button>
-                <button
-                    onClick={this.cubeStore.reset}
-                >
-                    Reset
-                </button>
+                <Button
+                    clickHandler={this.cubeStore.reset}
+                    text={"Reset"}
+                />
+                <RotateButton arrowDirection={"right"} clickHandler={this.cubeStore.rotateMiddleRight90} />
             </React.Fragment>
         );
     }

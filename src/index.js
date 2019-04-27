@@ -11,19 +11,29 @@ configure({enforceActions: "always"});
 window.debugStore = debugStore;
 
 const StyledAppContainer = styled.div`
-    background-color: lightgoldenrodyellow;
+    background-color: #fcf8f2;
     color: white;
     text-shadow: 0px 0px 4px #333;
     font-size: 2rem;
-    height: 100%;
-    width: 100%;
-    padding: 100px;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    padding: 200px 0;
+    font-family: Tahoma, Geneva, sans-serif;
+`;
+
+const StyledLayoutWrapper = styled.div`
+    margin: 0 auto;
+    width: max-content;
+    height: max-content;
 `;
 
 const App = () => {
     return(
         <StyledAppContainer>
-            <UnfoldedCube />
+            <StyledLayoutWrapper>
+                <UnfoldedCube />
+            </StyledLayoutWrapper>
         </StyledAppContainer>
     );
 };
