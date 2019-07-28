@@ -18,7 +18,7 @@ const StyledTile = styled.div.attrs(props => ({
 `;
 
 const Tile = observer(props => {
-    return(
+    return (
         <StyledTile
             tileColor={props.tileColor}
             initX={props.initX}

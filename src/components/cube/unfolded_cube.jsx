@@ -15,38 +15,44 @@ const StyledGrid = styled.div`
 /* For the western color scheme, the letters correspond to the following colors:
     L: orange, F: green, R: red, B: blue, D: yellow, U: white
  */
-const StyledLFace = styled(Face)` // L = Left
+const StyledLFace = styled(Face)`
+    // L = Left
     grid-column-start: first-col;
     grid-row-start: middle-row;
 `;
 
-const StyledFFace = styled(Face)` // F = Front
+const StyledFFace = styled(Face)`
+    // F = Front
     grid-column-start: second-col;
     grid-row-start: middle-row;
 `;
 
-const StyledRFace = styled(Face)` // R = Right
+const StyledRFace = styled(Face)`
+    // R = Right
     grid-column-start: third-col;
     grid-row-start: middle-row;
 `;
 
-const StyledBFace = styled(Face)` // B = Back
+const StyledBFace = styled(Face)`
+    // B = Back
     grid-column-start: fourth-col;
     grid-row-start: middle-row;
 `;
 
-const StyledDFace = styled(Face)` // D = Down
+const StyledDFace = styled(Face)`
+    // D = Down
     grid-column-start: second-col;
     grid-row-start: bottom-row;
 `;
 
-const StyledUFace = styled(Face)` // U = Up
+const StyledUFace = styled(Face)`
+    // U = Up
     grid-column-start: second-col;
     grid-row-start: top-row;
 `;
 
 @observer
-export default class UnfoldedCube extends React.Component {
+class UnfoldedCube extends React.Component {
     constructor(props) {
         super(props);
         this.cubeStore = new CubeStore();
@@ -54,7 +60,7 @@ export default class UnfoldedCube extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <React.Fragment>
                 <StyledGrid>
                     <StyledFFace tiles={this.cubeStore.FACE_F_TILES} />
@@ -65,42 +71,32 @@ export default class UnfoldedCube extends React.Component {
                     <StyledLFace tiles={this.cubeStore.FACE_L_TILES} />
                 </StyledGrid>
                 <br />
-                <button
-                    onClick={this.cubeStore.rotateTopRight90}
-                >
-                    Rotate Top =>
+                <button onClick={this.cubeStore.rotateTopRight90}>
+                    Rotate Top =&gt;
                 </button>
-                <button
-                    onClick={this.cubeStore.rotateMiddleRight90}
-                >
-                    Rotate Middle =>
+                <button onClick={this.cubeStore.rotateMiddleRight90}>
+                    Rotate Middle =&gt;
                 </button>
-                <button
-                    onClick={this.cubeStore.rotateBottomRight90}
-                >
-                    Rotate Bottom =>
+                <button onClick={this.cubeStore.rotateBottomRight90}>
+                    Rotate Bottom =&gt;
                 </button>
-                <button
-                    onClick={this.cubeStore.rotateLeftUp90}
-                >
+                <button onClick={this.cubeStore.rotateLeftUp90}>
                     Rotate Left ^
                 </button>
-                <button
-                    onClick={this.cubeStore.rotateMiddleUp90}
-                >
+                <button onClick={this.cubeStore.rotateMiddleUp90}>
                     Rotate Middle ^
                 </button>
-                <button
-                    onClick={this.cubeStore.rotateRightUp90}
-                >
+                <button onClick={this.cubeStore.rotateRightUp90}>
                     Rotate Right ^
                 </button>
-                <Button
-                    clickHandler={this.cubeStore.reset}
-                    text={"Reset"}
+                <Button clickHandler={this.cubeStore.reset} text={"Reset"} />
+                <RotateButton
+                    arrowDirection={"right"}
+                    clickHandler={this.cubeStore.rotateMiddleRight90}
                 />
-                <RotateButton arrowDirection={"right"} clickHandler={this.cubeStore.rotateMiddleRight90} />
             </React.Fragment>
         );
     }
 }
+
+export default UnfoldedCube;

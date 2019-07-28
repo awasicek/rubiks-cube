@@ -8,11 +8,11 @@ import { UpArrow } from "styled-icons/boxicons-regular/UpArrow";
 const StyledRightArrow = styled(RightArrow)`
     color: #222;
     cursor: pointer;
-    
+
     &:hover {
         color: #444;
     }
-    
+
     &:active {
         color: #222;
     }
@@ -21,11 +21,11 @@ const StyledRightArrow = styled(RightArrow)`
 const StyledLeftArrow = styled(LeftArrow)`
     color: #222;
     cursor: pointer;
-    
+
     &:hover {
         color: #444;
     }
-    
+
     &:active {
         color: #222;
     }
@@ -34,11 +34,11 @@ const StyledLeftArrow = styled(LeftArrow)`
 const StyledUpArrow = styled(UpArrow)`
     color: #222;
     cursor: pointer;
-    
+
     &:hover {
         color: #444;
     }
-    
+
     &:active {
         color: #222;
     }
@@ -47,27 +47,22 @@ const StyledUpArrow = styled(UpArrow)`
 const StyledDownArrow = styled(DownArrow)`
     color: #222;
     cursor: pointer;
-    
+
     &:hover {
         color: #444;
     }
-        
+
     &:active {
         color: #222;
     }
 `;
 
 const RotateButton = props => {
-    const {
-        arrowDirection,
-        clickHandler,
-        size,
-        tooltip
-    } = props;
+    const { arrowDirection, clickHandler, size, tooltip } = props;
 
-    switch(arrowDirection) {
+    switch (arrowDirection) {
         case "up": {
-            return(
+            return (
                 <StyledUpArrow
                     onClick={clickHandler}
                     size={size}
@@ -77,7 +72,7 @@ const RotateButton = props => {
         }
 
         case "down": {
-            return(
+            return (
                 <StyledDownArrow
                     onClick={clickHandler}
                     size={size}
@@ -87,7 +82,7 @@ const RotateButton = props => {
         }
 
         case "right": {
-            return(
+            return (
                 <StyledRightArrow
                     onClick={clickHandler}
                     size={size}
@@ -97,7 +92,7 @@ const RotateButton = props => {
         }
 
         case "left": {
-            return(
+            return (
                 <StyledLeftArrow
                     onClick={clickHandler}
                     size={size}

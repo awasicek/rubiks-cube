@@ -521,7 +521,7 @@ const INIT_CONFIG = [
         "y-coordinate": 1,
         color: COLORS.ORANGE,
         uid: 54
-    },
+    }
 ];
 
 export default INIT_CONFIG;

@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-import { configure } from 'mobx';
+import { configure } from "mobx";
 import UnfoldedCube from "@components/cube/unfolded_cube";
 import { debugStore } from "@stores/globals";
 
 // don't allow state modifications outside actions
-configure({enforceActions: "always"});
+configure({ enforceActions: "always" });
 
 window._debugStore = debugStore;
 
@@ -29,7 +29,7 @@ const StyledLayoutWrapper = styled.div`
 `;
 
 const App = () => {
-    return(
+    return (
         <StyledAppContainer>
             <StyledLayoutWrapper>
                 <UnfoldedCube />
