@@ -7,6 +7,7 @@
         "test": "jest",
         "test:coverage": "jest --coverage",
         "test:watch": "jest --watch",
+        "lint-staged": "lint-staged",
         "dev": "webpack-dev-server --mode development --open",
         "build": "webpack --mode production"
     },
@@ -63,8 +64,7 @@
     },
     "lint-staged": {
         "*.{js,jsx}": [
-            "prettier --write",
-            "eslint",
+            "eslint --fix",
             "git add",
             "jest --bail --findRelatedTests"
         ]
