@@ -15,7 +15,9 @@ module.exports = {
                         plugins: [
                             // decorators must go before class properties
                             ["@babel/plugin-proposal-decorators", { "legacy": true}],
-                            ["@babel/plugin-proposal-class-properties", { "loose": true}]
+                            ["@babel/plugin-proposal-class-properties", { "loose": true}],
+                            /* private methods must have same loose config as class properties */
+                            ["@babel/plugin-proposal-private-methods", { "loose": true }]
                         ],
                         presets: ["@babel/preset-env", "@babel/preset-react"]
                     }
