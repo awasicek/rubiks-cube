@@ -1,15 +1,15 @@
 import { observable, action } from "mobx";
 
 export default class DebugStore {
-    @observable debugModeEnabled = false;
+    @observable isDebugModeEnabled = false;
 
     @action.bound
     enableDebugMode = () => {
-        this.debugModeEnabled = true;
+        this.isDebugModeEnabled = true;
     };
 
     @action.bound
     disableDebugMode = () => {
-        this.debugModeEnabled = false;
+        this.isDebugModeEnabled = false;
     };
 }

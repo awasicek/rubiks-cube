@@ -2,3 +2,6 @@ dev_notes/
 node_modules/
 .idea/
 dist/
+
+# for now, do not version control the unit test coverage reports
+coverage/

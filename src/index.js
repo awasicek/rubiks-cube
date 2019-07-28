@@ -8,7 +8,7 @@ import { debugStore } from "@stores/globals";
 // don't allow state modifications outside actions
 configure({enforceActions: "always"});
 
-window.debugStore = debugStore;
+window._debugStore = debugStore;
 
 const StyledAppContainer = styled.div`
     background-color: #fcf8f2;

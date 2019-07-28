@@ -25,7 +25,7 @@ const Tile = observer(props => {
             initY={props.initY}
             uid={props.uid}
         >
-            {debugStore.debugModeEnabled ? props.uid : ""}
+            {debugStore.isDebugModeEnabled ? props.uid : ""}
         </StyledTile>
     );
 });

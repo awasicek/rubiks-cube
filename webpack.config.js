@@ -1,5 +1,5 @@
 const HTMLWebPackPlugin = require("html-webpack-plugin");
-const path = require('path');
+const path = require("path");
 
 module.exports = {
     module: {
@@ -9,19 +9,7 @@ module.exports = {
             {
                 test: /\.jsx?$/, // js and jsx
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        plugins: [
-                            // decorators must go before class properties
-                            ["@babel/plugin-proposal-decorators", { "legacy": true}],
-                            ["@babel/plugin-proposal-class-properties", { "loose": true}],
-                            /* private methods must have same loose config as class properties */
-                            ["@babel/plugin-proposal-private-methods", { "loose": true }]
-                        ],
-                        presets: ["@babel/preset-env", "@babel/preset-react"]
-                    }
-                }
+                use: "babel-loader"
             }
         ]
     },
