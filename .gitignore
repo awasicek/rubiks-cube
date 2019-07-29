@@ -4,4 +4,5 @@ node_modules/
 dist/
 
 # for now, do not version control the unit test coverage reports
-coverage/
+coverage/*
+!coverage/badge.svg
