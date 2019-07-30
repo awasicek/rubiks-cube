@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { configure } from "mobx";
 import UnfoldedCube from "@components/cube/unfolded_cube";
+import CubeStore from "@stores/cube_store";
 import { debugStore } from "@stores/globals";
 
 // don't allow state modifications outside actions
@@ -29,10 +30,12 @@ const StyledLayoutWrapper = styled.div`
 `;
 
 const App = () => {
+    const cubeStore = new CubeStore(); // TODO share via context hook
+
     return (
         <StyledAppContainer>
             <StyledLayoutWrapper>
-                <UnfoldedCube />
+                <UnfoldedCube cubeStore={cubeStore} />
             </StyledLayoutWrapper>
         </StyledAppContainer>
     );

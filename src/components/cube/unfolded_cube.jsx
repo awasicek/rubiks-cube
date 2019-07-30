@@ -3,8 +3,7 @@ import styled from "styled-components";
 import Face from "@components/cube/face";
 import RotateButton from "@components/controls/rotate_button";
 import Button from "@components/controls/button";
-import { observer } from "mobx-react";
-import CubeStore from "@stores/cube_store";
+import { observer } from "mobx-react-lite";
 
 const StyledGrid = styled.div`
     display: grid;
@@ -51,52 +50,33 @@ const StyledUFace = styled(Face)`
     grid-row-start: top-row;
 `;
 
-@observer
-class UnfoldedCube extends React.Component {
-    constructor(props) {
-        super(props);
-        this.cubeStore = new CubeStore();
-        window.cubeStore = this.cubeStore;
-    }
-
-    render() {
-        return (
-            <React.Fragment>
-                <StyledGrid>
-                    <StyledFFace tiles={this.cubeStore.FACE_F_TILES} />
-                    <StyledBFace tiles={this.cubeStore.FACE_B_TILES} />
-                    <StyledUFace tiles={this.cubeStore.FACE_U_TILES} />
-                    <StyledDFace tiles={this.cubeStore.FACE_D_TILES} />
-                    <StyledRFace tiles={this.cubeStore.FACE_R_TILES} />
-                    <StyledLFace tiles={this.cubeStore.FACE_L_TILES} />
-                </StyledGrid>
-                <br />
-                <button onClick={this.cubeStore.rotateTopRight90}>
-                    Rotate Top =&gt;
-                </button>
-                <button onClick={this.cubeStore.rotateMiddleRight90}>
-                    Rotate Middle =&gt;
-                </button>
-                <button onClick={this.cubeStore.rotateBottomRight90}>
-                    Rotate Bottom =&gt;
-                </button>
-                <button onClick={this.cubeStore.rotateLeftUp90}>
-                    Rotate Left ^
-                </button>
-                <button onClick={this.cubeStore.rotateMiddleUp90}>
-                    Rotate Middle ^
-                </button>
-                <button onClick={this.cubeStore.rotateRightUp90}>
-                    Rotate Right ^
-                </button>
-                <Button clickHandler={this.cubeStore.reset} text={"Reset"} />
-                <RotateButton
-                    arrowDirection={"right"}
-                    clickHandler={this.cubeStore.rotateMiddleRight90}
-                />
-            </React.Fragment>
-        );
-    }
-}
+const UnfoldedCube = observer(({ cubeStore }) => (
+    <React.Fragment>
+        <StyledGrid>
+            <StyledFFace tiles={cubeStore.FACE_F_TILES} />
+            <StyledBFace tiles={cubeStore.FACE_B_TILES} />
+            <StyledUFace tiles={cubeStore.FACE_U_TILES} />
+            <StyledDFace tiles={cubeStore.FACE_D_TILES} />
+            <StyledRFace tiles={cubeStore.FACE_R_TILES} />
+            <StyledLFace tiles={cubeStore.FACE_L_TILES} />
+        </StyledGrid>
+        <br />
+        <button onClick={cubeStore.rotateTopRight90}>Rotate Top =&gt;</button>
+        <button onClick={cubeStore.rotateMiddleRight90}>
+            Rotate Middle =&gt;
+        </button>
+        <button onClick={cubeStore.rotateBottomRight90}>
+            Rotate Bottom =&gt;
+        </button>
+        <button onClick={cubeStore.rotateLeftUp90}>Rotate Left ^</button>
+        <button onClick={cubeStore.rotateMiddleUp90}>Rotate Middle ^</button>
+        <button onClick={cubeStore.rotateRightUp90}>Rotate Right ^</button>
+        <Button clickHandler={cubeStore.reset} text={"Reset"} />
+        <RotateButton
+            arrowDirection={"right"}
+            clickHandler={cubeStore.rotateMiddleRight90}
+        />
+    </React.Fragment>
+));
 
 export default UnfoldedCube;

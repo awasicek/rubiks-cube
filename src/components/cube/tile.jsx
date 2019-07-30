@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { debugStore } from "@stores/globals";
-import { observer } from "mobx-react";
+import { observer } from "mobx-react-lite";
 /**
  * @fileoverview Component that displays a single tile of a Rubik's cube. Each face displays 9 tiles, and the Rubik's
  * cube has a total of 54 tiles. Tiles can be one of six colors: green, red, white, yellow, blue, or orange.
