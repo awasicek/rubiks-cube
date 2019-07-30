@@ -1,6 +1,7 @@
 dev_notes/
 node_modules/
 .idea/
+.DS_Store
 
 # for now, do not version control the unit test coverage reports
 coverage/*

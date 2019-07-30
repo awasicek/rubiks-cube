@@ -17,8 +17,8 @@ module.exports = {
         /* generate HTML file with <script> injected, write to dist/index.html
            and minify */
         new HTMLWebPackPlugin({
-        template: "./src/index.html",
-        filename: "./index.html"
+            template: "./src/index.html",
+            filename: "./index.html"
         })
     ],
     resolve: {
@@ -28,6 +28,19 @@ module.exports = {
             "@constants": path.resolve(__dirname, "src/constants/"),
             "@data": path.resolve(__dirname, "src/data/"),
             "@stores": path.resolve(__dirname, "src/stores/")
+        }
+    },
+    entry: {
+        index: "./src/index.js"
+    },
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist")
+    },
+    // de-dupe dependencies
+    optimization: {
+        splitChunks: {
+            chunks: "all"
         }
     }
 };

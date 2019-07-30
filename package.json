@@ -27,6 +27,7 @@
         "@babel/core": "^7.4.3",
         "@babel/plugin-proposal-class-properties": "^7.4.0",
         "@babel/plugin-proposal-decorators": "^7.4.0",
+        "@babel/plugin-proposal-private-methods": "^7.4.4",
         "@babel/preset-env": "^7.4.3",
         "@babel/preset-react": "^7.0.0",
         "babel-eslint": "^10.0.2",
@@ -49,10 +50,9 @@
         "webpack-dev-server": "^3.3.1"
     },
     "dependencies": {
-        "@babel/plugin-proposal-private-methods": "^7.4.4",
         "enhanced-resolve": "^4.1.0",
-        "mobx": "^5.9.4",
-        "mobx-react": "^5.4.3",
+        "mobx": "^5.13.0",
+        "mobx-react": "^6.1.1",
         "prop-types": "^15.7.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",

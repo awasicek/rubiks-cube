@@ -1,2 +1,3 @@
 jest.config.js
-dist/
+dist
+webpack.config.js
