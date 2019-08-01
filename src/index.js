@@ -29,9 +29,12 @@ const StyledLayoutWrapper = styled.div`
     height: max-content;
 `;
 
-const App = () => {
-    const cubeStore = new CubeStore(); // TODO share via context hook
+const cubeStore = new CubeStore(); // TODO share via context hook
 
+// DEV ONLY debugging
+window._cubeStore = cubeStore;
+
+const App = ({ cubeStore }) => {
     return (
         <StyledAppContainer>
             <StyledLayoutWrapper>
@@ -41,4 +44,4 @@ const App = () => {
     );
 };
 
-ReactDOM.render(<App />, document.getElementById("app_root"));
+ReactDOM.render(<App cubeStore={cubeStore} />, document.getElementById("app_root"));

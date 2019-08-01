@@ -51,32 +51,31 @@ const StyledUFace = styled(Face)`
 `;
 
 const UnfoldedCube = observer(({ cubeStore }) => (
-    <React.Fragment>
+    <>
         <StyledGrid>
-            <StyledFFace tiles={cubeStore.FACE_F_TILES} />
-            <StyledBFace tiles={cubeStore.FACE_B_TILES} />
-            <StyledUFace tiles={cubeStore.FACE_U_TILES} />
-            <StyledDFace tiles={cubeStore.FACE_D_TILES} />
-            <StyledRFace tiles={cubeStore.FACE_R_TILES} />
-            <StyledLFace tiles={cubeStore.FACE_L_TILES} />
+            <StyledFFace tiles={cubeStore.tilesFaceF} />
+            <StyledBFace tiles={cubeStore.tilesFaceB} />
+            <StyledUFace tiles={cubeStore.tilesFaceU} />
+            <StyledDFace tiles={cubeStore.tilesFaceD} />
+            <StyledRFace tiles={cubeStore.tilesFaceR} />
+            <StyledLFace tiles={cubeStore.tilesFaceL} />
         </StyledGrid>
         <br />
-        <button onClick={cubeStore.rotateTopRight90}>Rotate Top =&gt;</button>
-        <button onClick={cubeStore.rotateMiddleRight90}>
-            Rotate Middle =&gt;
-        </button>
-        <button onClick={cubeStore.rotateBottomRight90}>
-            Rotate Bottom =&gt;
-        </button>
-        <button onClick={cubeStore.rotateLeftUp90}>Rotate Left ^</button>
-        <button onClick={cubeStore.rotateMiddleUp90}>Rotate Middle ^</button>
-        <button onClick={cubeStore.rotateRightUp90}>Rotate Right ^</button>
+        <button onClick={cubeStore.rotateTopRight}>Rotate Top =&gt;</button>
+        <button onClick={cubeStore.rotateTopLeft}>&lt;= Rotate Top</button>
+        <button onClick={cubeStore.rotateMiddleRight}>Rotate Middle =&gt;</button>
+        <button onClick={cubeStore.rotateMiddleLeft}>&lt;= Rotate Middle</button>
+        <button onClick={cubeStore.rotateBottomRight}>Rotate Bottom =&gt;</button>
+        <button onClick={cubeStore.rotateBottomLeft}>&lt;= Rotate Bottom</button>
+        <button onClick={cubeStore.rotateLeftUp}>Rotate Left ^</button>
+        <button onClick={cubeStore.rotateLeftDown}>Rotate Left v</button>
+        <button onClick={cubeStore.rotateCenterUp}>Rotate Center ^</button>
+        <button onClick={cubeStore.rotateCenterDown}>Rotate Center v</button>
+        <button onClick={cubeStore.rotateRightUp}>Rotate Right ^</button>
+        <button onClick={cubeStore.rotateRightDown}>Rotate Right v</button>
         <Button clickHandler={cubeStore.reset} text={"Reset"} />
-        <RotateButton
-            arrowDirection={"right"}
-            clickHandler={cubeStore.rotateMiddleRight90}
-        />
-    </React.Fragment>
+        <RotateButton arrowDirection={"right"} clickHandler={cubeStore.rotateMiddleRight} />
+    </>
 ));
 
 export default UnfoldedCube;

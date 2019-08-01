@@ -1,527 +1,653 @@
-import COLORS from "@constants/colors";
-import FACES from "@constants/faces";
+import { colors } from "@constants/cube";
+import faces from "@constants/faces";
 /**
- * @fileoverview Array of tile objects seed data for a map that represent the initial configuration of the Rubik's cube.
+ * @fileoverview Seed data that represents the initial configuration of the Rubik's cube.
  */
 
-// TODO -- consider another data structure arrangement such as sorting by faces for better access times
+/*
+ * RUBIK'S CUBE LEGEND:
+ *
+ *          Left | Ctr | Right (columns)
+ *         ___________________
+ *     Top |-1,1 | 0,1 | 1,1 |
+ *         |_____|_____|_____|
+ *  Middle |-1,0 | 0,0 | 1,0 |
+ *         |_____|_____|_____|
+ *  Bottom |-1,-1| 0,-1| 1,-1|
+ *         |_____|_____|_____|
+ *  (rows)                       (x,y)
+ */
 
-const INIT_CONFIG = [
-    //======================================
-    // FACE F (initially the front face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.GREEN,
-        uid: 1
+const initCubeConfig = {
+    faces: {
+        byId: {
+            faceF: {
+                id: faces.F_FACE,
+                tiles: ["tile1", "tile2", "tile3", "tile4", "tile5", "tile6", "tile7", "tile8", "tile9"]
+            },
+            faceB: {
+                id: faces.B_FACE,
+                tiles: ["tile10", "tile11", "tile12", "tile13", "tile14", "tile15", "tile16", "tile17", "tile18"]
+            },
+            faceU: {
+                id: faces.U_FACE,
+                tiles: ["tile19", "tile20", "tile21", "tile22", "tile23", "tile24", "tile25", "tile26", "tile27"]
+            },
+            faceD: {
+                id: faces.D_FACE,
+                tiles: ["tile28", "tile29", "tile30", "tile31", "tile32", "tile33", "tile34", "tile35", "tile36"]
+            },
+            faceR: {
+                id: faces.R_FACE,
+                tiles: ["tile37", "tile38", "tile39", "tile40", "tile41", "tile42", "tile43", "tile44", "tile45"]
+            },
+            faceL: {
+                id: faces.L_FACE,
+                tiles: ["tile46", "tile47", "tile48", "tile49", "tile50", "tile51", "tile52", "tile53", "tile54"]
+            }
+        },
+        allIds: [faces.F_FACE, faces.B_FACE, faces.U_FACE, faces.D_FACE, faces.R_FACE, faces.L_FACE]
     },
-    // tile 2
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.GREEN,
-        uid: 2
-    },
-    // tile 3
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.GREEN,
-        uid: 3
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.GREEN,
-        uid: 4
-    },
-    // tile 5
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.GREEN,
-        uid: 5
-    },
-    // tile 6
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.GREEN,
-        uid: 6
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.GREEN,
-        uid: 7
-    },
-    // tile 8
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.GREEN,
-        uid: 8
-    },
-    // tile 9
-    {
-        face: FACES.F_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.GREEN,
-        uid: 9
-    },
-
-    //======================================
-    // FACE B (initially the back face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.BLUE,
-        uid: 10
-    },
-    // tile 2
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.BLUE,
-        uid: 11
-    },
-    // tile 3
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.BLUE,
-        uid: 12
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.BLUE,
-        uid: 13
-    },
-    // tile 5
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.BLUE,
-        uid: 14
-    },
-    // tile 6
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.BLUE,
-        uid: 15
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.BLUE,
-        uid: 16
-    },
-    // tile 8
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.BLUE,
-        uid: 17
-    },
-    // tile 9
-    {
-        face: FACES.B_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.BLUE,
-        uid: 18
-    },
-
-    //======================================
-    // FACE U (initially the up/top face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.WHITE,
-        uid: 19
-    },
-    // tile 2
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.WHITE,
-        uid: 20
-    },
-    // tile 3
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.WHITE,
-        uid: 21
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.WHITE,
-        uid: 22
-    },
-    // tile 5
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.WHITE,
-        uid: 23
-    },
-    // tile 6
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.WHITE,
-        uid: 24
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.WHITE,
-        uid: 25
-    },
-    // tile 8
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.WHITE,
-        uid: 26
-    },
-    // tile 9
-    {
-        face: FACES.U_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.WHITE,
-        uid: 27
-    },
-
-    //======================================
-    // FACE D (initially the down/bottom face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.YELLOW,
-        uid: 28
-    },
-    // tile 2
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.YELLOW,
-        uid: 29
-    },
-    // tile 3
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.YELLOW,
-        uid: 30
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.YELLOW,
-        uid: 31
-    },
-    // tile 5
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.YELLOW,
-        uid: 32
-    },
-    // tile 6
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.YELLOW,
-        uid: 33
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.YELLOW,
-        uid: 34
-    },
-    // tile 8
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.YELLOW,
-        uid: 35
-    },
-    // tile 9
-    {
-        face: FACES.D_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.YELLOW,
-        uid: 36
-    },
-
-    //======================================
-    // FACE R (initially the right face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.RED,
-        uid: 37
-    },
-    // tile 2
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.RED,
-        uid: 38
-    },
-    // tile 3
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.RED,
-        uid: 39
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.RED,
-        uid: 40
-    },
-    // tile 5
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.RED,
-        uid: 41
-    },
-    // tile 6
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.RED,
-        uid: 42
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.RED,
-        uid: 43
-    },
-    // tile 8
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.RED,
-        uid: 44
-    },
-    // tile 9
-    {
-        face: FACES.R_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.RED,
-        uid: 45
-    },
-
-    //======================================
-    // FACE L (initially the left face)
-    //======================================
-
-    //--------------------------------------
-    // bottom row, left to right
-    //--------------------------------------
-    // tile 1
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": -1,
-        color: COLORS.ORANGE,
-        uid: 46
-    },
-    // tile 2
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": -1,
-        color: COLORS.ORANGE,
-        uid: 47
-    },
-    // tile 3
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": -1,
-        color: COLORS.ORANGE,
-        uid: 48
-    },
-    //--------------------------------------
-    // middle row, left to right
-    //--------------------------------------
-    // tile 4
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 0,
-        color: COLORS.ORANGE,
-        uid: 49
-    },
-    // tile 5
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 0,
-        color: COLORS.ORANGE,
-        uid: 50
-    },
-    // tile 6
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 0,
-        color: COLORS.ORANGE,
-        uid: 51
-    },
-    //--------------------------------------
-    // top row, left to right
-    //--------------------------------------
-    // tile 7
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": -1,
-        "y-coordinate": 1,
-        color: COLORS.ORANGE,
-        uid: 52
-    },
-    // tile 8
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 0,
-        "y-coordinate": 1,
-        color: COLORS.ORANGE,
-        uid: 53
-    },
-    // tile 9
-    {
-        face: FACES.L_FACE,
-        "x-coordinate": 1,
-        "y-coordinate": 1,
-        color: COLORS.ORANGE,
-        uid: 54
+    tiles: {
+        byId: {
+            tile1: {
+                id: "tile1",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile2: {
+                id: "tile2",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile3: {
+                id: "tile3",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile4: {
+                id: "tile4",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile5: {
+                id: "tile5",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile6: {
+                id: "tile6",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile7: {
+                id: "tile7",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile8: {
+                id: "tile8",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile9: {
+                id: "tile9",
+                color: colors.GREEN,
+                face: faces.F_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            },
+            tile10: {
+                id: "tile10",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile11: {
+                id: "tile11",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile12: {
+                id: "tile12",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile13: {
+                id: "tile13",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile14: {
+                id: "tile14",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile15: {
+                id: "tile15",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile16: {
+                id: "tile16",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile17: {
+                id: "tile17",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile18: {
+                id: "tile18",
+                color: colors.BLUE,
+                face: faces.B_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            },
+            tile19: {
+                id: "tile19",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile20: {
+                id: "tile20",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile21: {
+                id: "tile21",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile22: {
+                id: "tile22",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile23: {
+                id: "tile23",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile24: {
+                id: "tile24",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile25: {
+                id: "tile25",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile26: {
+                id: "tile26",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile27: {
+                id: "tile27",
+                color: colors.WHITE,
+                face: faces.U_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            },
+            tile28: {
+                id: "tile28",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile29: {
+                id: "tile29",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile30: {
+                id: "tile30",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile31: {
+                id: "tile31",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile32: {
+                id: "tile32",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile33: {
+                id: "tile33",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile34: {
+                id: "tile34",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile35: {
+                id: "tile35",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile36: {
+                id: "tile36",
+                color: colors.YELLOW,
+                face: faces.D_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            },
+            tile37: {
+                id: "tile37",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile38: {
+                id: "tile38",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile39: {
+                id: "tile39",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile40: {
+                id: "tile40",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile41: {
+                id: "tile41",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile42: {
+                id: "tile42",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile43: {
+                id: "tile43",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile44: {
+                id: "tile44",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile45: {
+                id: "tile45",
+                color: colors.RED,
+                face: faces.R_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            },
+            tile46: {
+                id: "tile46",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially bottom left
+                    xCoord: -1,
+                    yCoord: -1
+                }
+            },
+            tile47: {
+                id: "tile47",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially bottom center
+                    xCoord: 0,
+                    yCoord: -1
+                }
+            },
+            tile48: {
+                id: "tile48",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially bottom right
+                    xCoord: 1,
+                    yCoord: -1
+                }
+            },
+            tile49: {
+                id: "tile49",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially middle left
+                    xCoord: -1,
+                    yCoord: 0
+                }
+            },
+            tile50: {
+                id: "tile50",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially middle center
+                    xCoord: 0,
+                    yCoord: 0
+                }
+            },
+            tile51: {
+                id: "tile51",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially middle right
+                    xCoord: 1,
+                    yCoord: 0
+                }
+            },
+            tile52: {
+                id: "tile52",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially top left
+                    xCoord: -1,
+                    yCoord: 1
+                }
+            },
+            tile53: {
+                id: "tile53",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially top center
+                    xCoord: 0,
+                    yCoord: 1
+                }
+            },
+            tile54: {
+                id: "tile54",
+                color: colors.ORANGE,
+                face: faces.L_FACE,
+                position: {
+                    // initially top right
+                    xCoord: 1,
+                    yCoord: 1
+                }
+            }
+        },
+        allIds: [
+            "tile1",
+            "tile2",
+            "tile3",
+            "tile4",
+            "tile5",
+            "tile6",
+            "tile7",
+            "tile8",
+            "tile9",
+            "tile10",
+            "tile11",
+            "tile12",
+            "tile13",
+            "tile14",
+            "tile15",
+            "tile16",
+            "tile17",
+            "tile18",
+            "tile19",
+            "tile20",
+            "tile21",
+            "tile22",
+            "tile23",
+            "tile24",
+            "tile25",
+            "tile26",
+            "tile27",
+            "tile28",
+            "tile29",
+            "tile30",
+            "tile31",
+            "tile32",
+            "tile33",
+            "tile34",
+            "tile35",
+            "tile36",
+            "tile37",
+            "tile38",
+            "tile39",
+            "tile40",
+            "tile41",
+            "tile42",
+            "tile43",
+            "tile44",
+            "tile45",
+            "tile46",
+            "tile47",
+            "tile48",
+            "tile49",
+            "tile50",
+            "tile51",
+            "tile52",
+            "tile53",
+            "tile54"
+        ]
     }
-];
+};
 
-export default INIT_CONFIG;
+export default initCubeConfig;

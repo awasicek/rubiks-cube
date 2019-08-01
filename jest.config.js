@@ -80,7 +80,8 @@ module.exports = {
         "@components(.*)": "<rootDir>/src/components/$1",
         "@constants(.*)": "<rootDir>/src/constants/$1",
         "@data(.*)": "<rootDir>/src/data/$1",
-        "@stores(.*)": "<rootDir>/src/stores/$1"
+        "@stores(.*)": "<rootDir>/src/stores/$1",
+        "@utils(.*)": "<rootDir>/src/utils/$1"
     }
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

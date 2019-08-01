@@ -1,0 +1,7541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exercises the Cube's public API Checks that rotating the bottom row to the left behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile13",
+      "tile14",
+      "tile15",
+      "tile16",
+      "tile17",
+      "tile18",
+      "tile46",
+      "tile47",
+      "tile48",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile4",
+      "tile5",
+      "tile6",
+      "tile7",
+      "tile8",
+      "tile9",
+      "tile37",
+      "tile38",
+      "tile39",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+      "tile1",
+      "tile2",
+      "tile3",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+      "tile10",
+      "tile11",
+      "tile12",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the bottom row to the left behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the bottom row to the right behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile13",
+      "tile14",
+      "tile15",
+      "tile16",
+      "tile17",
+      "tile18",
+      "tile37",
+      "tile38",
+      "tile39",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile4",
+      "tile5",
+      "tile6",
+      "tile7",
+      "tile8",
+      "tile9",
+      "tile46",
+      "tile47",
+      "tile48",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+      "tile10",
+      "tile11",
+      "tile12",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+      "tile1",
+      "tile2",
+      "tile3",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the bottom row to the right behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the center column downward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile12",
+      "tile13",
+      "tile15",
+      "tile16",
+      "tile18",
+      "tile29",
+      "tile32",
+      "tile35",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile30",
+      "tile31",
+      "tile33",
+      "tile34",
+      "tile36",
+      "tile2",
+      "tile5",
+      "tile8",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile3",
+      "tile4",
+      "tile6",
+      "tile7",
+      "tile9",
+      "tile20",
+      "tile23",
+      "tile26",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile21",
+      "tile22",
+      "tile24",
+      "tile25",
+      "tile27",
+      "tile11",
+      "tile14",
+      "tile17",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the center column downward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the center column upward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile12",
+      "tile13",
+      "tile15",
+      "tile16",
+      "tile18",
+      "tile20",
+      "tile23",
+      "tile26",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile30",
+      "tile31",
+      "tile33",
+      "tile34",
+      "tile36",
+      "tile11",
+      "tile14",
+      "tile17",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile3",
+      "tile4",
+      "tile6",
+      "tile7",
+      "tile9",
+      "tile29",
+      "tile32",
+      "tile35",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile21",
+      "tile22",
+      "tile24",
+      "tile25",
+      "tile27",
+      "tile2",
+      "tile5",
+      "tile8",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the center column upward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the left column downward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile13",
+      "tile14",
+      "tile16",
+      "tile17",
+      "tile28",
+      "tile31",
+      "tile34",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile29",
+      "tile30",
+      "tile32",
+      "tile33",
+      "tile35",
+      "tile36",
+      "tile1",
+      "tile4",
+      "tile7",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile2",
+      "tile3",
+      "tile5",
+      "tile6",
+      "tile8",
+      "tile9",
+      "tile19",
+      "tile22",
+      "tile25",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile20",
+      "tile21",
+      "tile23",
+      "tile24",
+      "tile26",
+      "tile27",
+      "tile12",
+      "tile15",
+      "tile18",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the left column downward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the left column upward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile13",
+      "tile14",
+      "tile16",
+      "tile17",
+      "tile19",
+      "tile22",
+      "tile25",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile29",
+      "tile30",
+      "tile32",
+      "tile33",
+      "tile35",
+      "tile36",
+      "tile12",
+      "tile15",
+      "tile18",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile2",
+      "tile3",
+      "tile5",
+      "tile6",
+      "tile8",
+      "tile9",
+      "tile28",
+      "tile31",
+      "tile34",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile20",
+      "tile21",
+      "tile23",
+      "tile24",
+      "tile26",
+      "tile27",
+      "tile1",
+      "tile4",
+      "tile7",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the left column upward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the middle row to the left behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile12",
+      "tile16",
+      "tile17",
+      "tile18",
+      "tile49",
+      "tile50",
+      "tile51",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile3",
+      "tile7",
+      "tile8",
+      "tile9",
+      "tile40",
+      "tile41",
+      "tile42",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile52",
+      "tile53",
+      "tile54",
+      "tile4",
+      "tile5",
+      "tile6",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile43",
+      "tile44",
+      "tile45",
+      "tile13",
+      "tile14",
+      "tile15",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the middle row to the left behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the middle row to the right behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile12",
+      "tile16",
+      "tile17",
+      "tile18",
+      "tile40",
+      "tile41",
+      "tile42",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile3",
+      "tile7",
+      "tile8",
+      "tile9",
+      "tile49",
+      "tile50",
+      "tile51",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile52",
+      "tile53",
+      "tile54",
+      "tile13",
+      "tile14",
+      "tile15",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile43",
+      "tile44",
+      "tile45",
+      "tile4",
+      "tile5",
+      "tile6",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the middle row to the right behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the right column downward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile11",
+      "tile12",
+      "tile14",
+      "tile15",
+      "tile17",
+      "tile18",
+      "tile30",
+      "tile33",
+      "tile36",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile31",
+      "tile32",
+      "tile34",
+      "tile35",
+      "tile3",
+      "tile6",
+      "tile9",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile4",
+      "tile5",
+      "tile7",
+      "tile8",
+      "tile21",
+      "tile24",
+      "tile27",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile22",
+      "tile23",
+      "tile25",
+      "tile26",
+      "tile10",
+      "tile13",
+      "tile16",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the right column downward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the right column upward behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile11",
+      "tile12",
+      "tile14",
+      "tile15",
+      "tile17",
+      "tile18",
+      "tile21",
+      "tile24",
+      "tile27",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile31",
+      "tile32",
+      "tile34",
+      "tile35",
+      "tile10",
+      "tile13",
+      "tile16",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile4",
+      "tile5",
+      "tile7",
+      "tile8",
+      "tile30",
+      "tile33",
+      "tile36",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile22",
+      "tile23",
+      "tile25",
+      "tile26",
+      "tile3",
+      "tile6",
+      "tile9",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the right column upward behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceU",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the top row to the left behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile12",
+      "tile13",
+      "tile14",
+      "tile15",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile3",
+      "tile4",
+      "tile5",
+      "tile6",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile7",
+      "tile8",
+      "tile9",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile16",
+      "tile17",
+      "tile18",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the top row to the left behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the top row to the right behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile10",
+      "tile11",
+      "tile12",
+      "tile13",
+      "tile14",
+      "tile15",
+      "tile43",
+      "tile44",
+      "tile45",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile28",
+      "tile29",
+      "tile30",
+      "tile31",
+      "tile32",
+      "tile33",
+      "tile34",
+      "tile35",
+      "tile36",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile1",
+      "tile2",
+      "tile3",
+      "tile4",
+      "tile5",
+      "tile6",
+      "tile52",
+      "tile53",
+      "tile54",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile46",
+      "tile47",
+      "tile48",
+      "tile49",
+      "tile50",
+      "tile51",
+      "tile16",
+      "tile17",
+      "tile18",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile37",
+      "tile38",
+      "tile39",
+      "tile40",
+      "tile41",
+      "tile42",
+      "tile7",
+      "tile8",
+      "tile9",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile19",
+      "tile20",
+      "tile21",
+      "tile22",
+      "tile23",
+      "tile24",
+      "tile25",
+      "tile26",
+      "tile27",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Checks that rotating the top row to the right behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceB",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceU",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceD",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceR",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceF",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Verifies that a combination of row and column rotations behaves correctly 1`] = `
+Object {
+  "faceB": Object {
+    "id": "faceB",
+    "tiles": Array [
+      "tile51",
+      "tile49",
+      "tile41",
+      "tile31",
+      "tile54",
+      "tile52",
+      "tile20",
+      "tile21",
+      "tile1",
+    ],
+  },
+  "faceD": Object {
+    "id": "faceD",
+    "tiles": Array [
+      "tile23",
+      "tile24",
+      "tile4",
+      "tile27",
+      "tile7",
+      "tile11",
+      "tile43",
+      "tile37",
+      "tile40",
+    ],
+  },
+  "faceF": Object {
+    "id": "faceF",
+    "tiles": Array [
+      "tile44",
+      "tile38",
+      "tile50",
+      "tile22",
+      "tile45",
+      "tile39",
+      "tile35",
+      "tile36",
+      "tile18",
+    ],
+  },
+  "faceL": Object {
+    "id": "faceL",
+    "tiles": Array [
+      "tile47",
+      "tile53",
+      "tile16",
+      "tile25",
+      "tile10",
+      "tile19",
+      "tile13",
+      "tile5",
+      "tile29",
+    ],
+  },
+  "faceR": Object {
+    "id": "faceR",
+    "tiles": Array [
+      "tile8",
+      "tile9",
+      "tile34",
+      "tile2",
+      "tile3",
+      "tile28",
+      "tile6",
+      "tile14",
+      "tile26",
+    ],
+  },
+  "faceU": Object {
+    "id": "faceU",
+    "tiles": Array [
+      "tile32",
+      "tile33",
+      "tile15",
+      "tile30",
+      "tile12",
+      "tile42",
+      "tile48",
+      "tile46",
+      "tile17",
+    ],
+  },
+}
+`;
+
+exports[`Exercises the Cube's public API Verifies that a combination of row and column rotations behaves correctly 2`] = `
+Object {
+  "tile1": Object {
+    "color": "green",
+    "face": "faceB",
+    "id": "tile1",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile10": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile10",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile11": Object {
+    "color": "blue",
+    "face": "faceD",
+    "id": "tile11",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile12": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile12",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile13": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile13",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile14": Object {
+    "color": "blue",
+    "face": "faceR",
+    "id": "tile14",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile15": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile15",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile16": Object {
+    "color": "blue",
+    "face": "faceL",
+    "id": "tile16",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile17": Object {
+    "color": "blue",
+    "face": "faceU",
+    "id": "tile17",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile18": Object {
+    "color": "blue",
+    "face": "faceF",
+    "id": "tile18",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile19": Object {
+    "color": "white",
+    "face": "faceL",
+    "id": "tile19",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile2": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile2",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile20": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile20",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile21": Object {
+    "color": "white",
+    "face": "faceB",
+    "id": "tile21",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile22": Object {
+    "color": "white",
+    "face": "faceF",
+    "id": "tile22",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile23": Object {
+    "color": "white",
+    "face": "faceD",
+    "id": "tile23",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile24": Object {
+    "color": "white",
+    "face": "faceD",
+    "id": "tile24",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile25": Object {
+    "color": "white",
+    "face": "faceL",
+    "id": "tile25",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile26": Object {
+    "color": "white",
+    "face": "faceR",
+    "id": "tile26",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile27": Object {
+    "color": "white",
+    "face": "faceD",
+    "id": "tile27",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile28": Object {
+    "color": "yellow",
+    "face": "faceR",
+    "id": "tile28",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile29": Object {
+    "color": "yellow",
+    "face": "faceL",
+    "id": "tile29",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile3": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile3",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile30": Object {
+    "color": "yellow",
+    "face": "faceU",
+    "id": "tile30",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile31": Object {
+    "color": "yellow",
+    "face": "faceB",
+    "id": "tile31",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile32": Object {
+    "color": "yellow",
+    "face": "faceU",
+    "id": "tile32",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile33": Object {
+    "color": "yellow",
+    "face": "faceU",
+    "id": "tile33",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile34": Object {
+    "color": "yellow",
+    "face": "faceR",
+    "id": "tile34",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile35": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile35",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile36": Object {
+    "color": "yellow",
+    "face": "faceF",
+    "id": "tile36",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile37": Object {
+    "color": "red",
+    "face": "faceD",
+    "id": "tile37",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile38": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile38",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile39": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile39",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile4": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile4",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile40": Object {
+    "color": "red",
+    "face": "faceD",
+    "id": "tile40",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile41": Object {
+    "color": "red",
+    "face": "faceB",
+    "id": "tile41",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile42": Object {
+    "color": "red",
+    "face": "faceU",
+    "id": "tile42",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile43": Object {
+    "color": "red",
+    "face": "faceD",
+    "id": "tile43",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile44": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile44",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile45": Object {
+    "color": "red",
+    "face": "faceF",
+    "id": "tile45",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 1,
+    },
+  },
+  "tile46": Object {
+    "color": "orange",
+    "face": "faceU",
+    "id": "tile46",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile47": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile47",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": 0,
+    },
+  },
+  "tile48": Object {
+    "color": "orange",
+    "face": "faceU",
+    "id": "tile48",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile49": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile49",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile5": Object {
+    "color": "green",
+    "face": "faceL",
+    "id": "tile5",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile50": Object {
+    "color": "orange",
+    "face": "faceF",
+    "id": "tile50",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 0,
+    },
+  },
+  "tile51": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile51",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": 1,
+    },
+  },
+  "tile52": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile52",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+  "tile53": Object {
+    "color": "orange",
+    "face": "faceL",
+    "id": "tile53",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile54": Object {
+    "color": "orange",
+    "face": "faceB",
+    "id": "tile54",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 1,
+    },
+  },
+  "tile6": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile6",
+    "position": Object {
+      "xCoord": 0,
+      "yCoord": -1,
+    },
+  },
+  "tile7": Object {
+    "color": "green",
+    "face": "faceD",
+    "id": "tile7",
+    "position": Object {
+      "xCoord": -1,
+      "yCoord": -1,
+    },
+  },
+  "tile8": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile8",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": 0,
+    },
+  },
+  "tile9": Object {
+    "color": "green",
+    "face": "faceR",
+    "id": "tile9",
+    "position": Object {
+      "xCoord": 1,
+      "yCoord": -1,
+    },
+  },
+}
+`;

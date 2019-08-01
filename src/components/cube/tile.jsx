@@ -9,7 +9,7 @@ import { observer } from "mobx-react-lite";
 
 const StyledTile = styled.div.attrs(props => ({
     "data-static-coords": `${props.initX}, ${props.initY}`,
-    "data-uid": props.uid
+    "data-tile-id": props.id
 }))`
     border: 1px solid black;
     height: 100px;
@@ -19,13 +19,8 @@ const StyledTile = styled.div.attrs(props => ({
 
 const Tile = observer(props => {
     return (
-        <StyledTile
-            tileColor={props.tileColor}
-            initX={props.initX}
-            initY={props.initY}
-            uid={props.uid}
-        >
-            {debugStore.isDebugModeEnabled ? props.uid : ""}
+        <StyledTile tileColor={props.tileColor} initX={props.initX} initY={props.initY} id={props.id}>
+            {debugStore.isDebugModeEnabled ? props.id : ""}
         </StyledTile>
     );
 });
@@ -34,7 +29,7 @@ Tile.defaultProps = {
     tileColor: "grey",
     initX: "errorX",
     initY: "errorY",
-    uid: "errorUID"
+    id: "errorID"
 };
 
 export default Tile;
